@@ -24,12 +24,24 @@
     <ClCompile Include="mathutils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="day.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="func.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mathutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="day.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rng.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,6 +2,8 @@
 #include "func.h"
 #include "mathutils.h"
 #include <cmath>
+#include "rng.h"
+#include "day.h"
 using namespace std;
 
 // DECLARATION: Hey compiler, this thing that doesn't exist yet will probably exist somewhere else.
@@ -10,11 +12,9 @@ using namespace std;
 
 int main()
 {
-	int numA = 1;
-	int numB = 2;
-
-	cout << "Sum: " << sum(numA, numB);
-
+	seedRng(36);
+	cout << rng() << endl;
+	system("pause");
 }
 
 // Compilation phase: one translation unit per source file : also called the object file
