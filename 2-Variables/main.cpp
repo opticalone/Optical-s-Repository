@@ -3,7 +3,7 @@
 
 
 
-#include<isostream>
+#include<iostream>
 
 int main()
 {
@@ -60,7 +60,7 @@ int main()
 	std::cout << "enter width" << std::endl;
 	std::cin >> rWidth;
 	std::cout << "H: " << rHeight << " , W: " << rWidth << std::endl;
-float rArea = rWidth * rHeight;
+	float rArea = rWidth * rHeight;
 	std::cout << "Area: " << rArea << std::endl;
 
 
