@@ -2,6 +2,16 @@
 #include <cstring>
 using namespace std;
 
+/*
+precondition data to match problem
+	remove non alpha char. reduce to lower case
+
+dynamic skpis what you dont need
+	while comparing or shift to lower case
+
+*/
+
+
 struct Player
 {
 	char name[80];
@@ -17,6 +27,11 @@ void addStrings(char dst[], int size, char src1[], char src2[])
 
 	//result should be src1+src2
 
+
+}
+
+void palen()
+{
 
 }
 
@@ -62,3 +77,4 @@ void main()
 
 	system("pause");
 }
+
