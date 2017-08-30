@@ -17,80 +17,6 @@
 
 
 using namespace std;
-void blink()
-{
-	system("color 2");
-	Sleep(50);
-	system("color 1");
-	Sleep(50);
-	system("color 3");
-	Sleep(50);
-	system("color 4");
-	Sleep(50);
-	system("color 5");
-	Sleep(50);
-	system("color 6");
-	Sleep(50);
-	system("color 7");
-	Sleep(50);
-	system("color 8");
-	Sleep(50);
-	system("color 9");
-	Sleep(50);
-	system("color A");
-	Sleep(50);
-	system("color B");
-	Sleep(50);
-	system("color C");
-	Sleep(50);
-	system("color D");
-	Sleep(50);
-	system("color E");
-	Sleep(50);
-	system("color F");
-	Sleep(50);
-	system("color 6");
-	Sleep(50);
-}
-void ColorPicker(int color)
-{
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
-}
-void TimedPause(int millisec)
-{
-	Sleep(millisec);
-}
-void DelayText(int millisec, char word[])
-{
-	for (int i = 0; i < strlen(word); i++)
-	{
-		cout << word[i];
-		//this_thread::sleep_for(chrono::milliseconds(millisec));
-		Sleep(millisec);
-	}
-
-}
-void DelayTextWithSkip(int millisec, char word[])
-{
-	for (int i = 0; i < strlen(word); i++)
-	{
-		/*int rando = rand() % 15+ 1;
-		ColorPicker(rando);*/
-		cout << word[i];
-		Sleep(millisec);
-	}
-	cout << endl;
-}
-
-void test(int x, int y)
-{
-	for (int i = x; i <= y; i++)
-	{
-		ColorPicker(i);
-		DelayText(1, "test");
-		std::cout << i << endl;
-	}
-}
 
 void main()
 {
@@ -99,63 +25,63 @@ void main()
 		test(1, 15);
 
 		ColorPicker(10);
-		DelayTextWithSkip(20, "     ,d8888b        d8b       d8b       d8b                     ");                                   
-		DelayTextWithSkip(20, "     88P'           ?88       ?88       88P                     ");
-		DelayTextWithSkip(20, "  d888888P           88b       88b     d88                      ");
-		DelayTextWithSkip(20, "    ?88'  d888b8b    888888b   888888b 888   d888b8b  ?88   d8P ");
-		DelayTextWithSkip(20, "    88P  d8P' ?88    88P `?8b  88P `?8b?88  d8P' ?88  d88   88  ");
-		DelayTextWithSkip(10, "   d88   88b  ,88b  d88   88P d88,  d88 88b 88b  ,88b ?8(  d88  ");
-		DelayTextWithSkip(10, "  d88'   `?88P'`88bd88'   88bd88'`?88P'  88b`?88P'`88b`?88P'?8b ");
-		DelayTextWithSkip(1, "                                                            )88");
-		DelayTextWithSkip(1, "                                                          ,d8P");
-		DelayTextWithSkip(1, "                                                       `?888P'");
-    
-		ColorPicker(8);
-		DelayTextWithSkip(20, "Welcome to Fahblay");
-		cout << " " << endl;
-		DelayTextWithSkip(50, "This is a text based adventure of good and...");
-		ColorPicker(4);
-		DelayTextWithSkip(300, "...EVIL");
-		ColorPicker(8);
-		cout << " " << endl;
-		DelayTextWithSkip(20, "What is your name?");
-		cin >> playerName;
-		cout << "" << endl;
-		DelayTextWithSkip(20, "We can't all have ringers I suppose.");
-		cout << playerName;
+		//DelayTextWithSkip(70, "     ,d8888b        d8b       d8b       d8b                     ");                                   
+		//DelayTextWithSkip(60, "     88P'           ?88       ?88       88P                     ");
+		//DelayTextWithSkip(50, "  d888888P           88b       88b     d88                      ");
+		//DelayTextWithSkip(40, "    ?88'  d888b8b    888888b   888888b 888   d888b8b  ?88   d8P ");
+		//DelayTextWithSkip(30, "    88P  d8P' ?88    88P `?8b  88P `?8b?88  d8P' ?88  d88   88  ");
+		//DelayTextWithSkip(20, "   d88   88b  ,88b  d88   88P d88,  d88 88b 88b  ,88b ?8(  d88  ");
+		//DelayTextWithSkip(10, "  d88'   `?88P'`88bd88'   88bd88'`?88P'  88b`?88P'`88b`?88P'?8b ");
+		//DelayTextWithSkip(1, "                                                            )88");
+		//DelayTextWithSkip(1, "                                                          ,d8P");
+		//DelayTextWithSkip(1, "                                                       `?888P'");
+  //  
+		//ColorPicker(8);
+		//DelayTextWithSkip(20, "Welcome to Fahblay");
+		//cout << " " << endl;
+		//DelayTextWithSkip(50, "This is a text based adventure of good and...");
+		//ColorPicker(4);
+		//DelayTextWithSkip(300, "...EVIL");
+		//ColorPicker(8);
+		//cout << " " << endl;
+		//DelayTextWithSkip(20, "What is your name?");
+		//cin >> playerName;
+		//cout << "" << endl;
+		//DelayTextWithSkip(20, "We can't all have ringers I suppose.");
+		//cout << playerName;
 
-		DelayTextWithSkip(20, ", you will have to make decisions.");
-		cout << "" << endl;
-		Sleep(3000);
-		DelayTextWithSkip(20, "Your choices WILL determine your FATE.");
-		
-		cout << "" << endl;
-		Sleep(3000);
-		DelayTextWithSkip(20, "Here is your first one");
-		
-		cout << "" << endl;
-		Sleep(3000);
+		//DelayTextWithSkip(20, ", you will have to make decisions.");
+		//cout << "" << endl;
+		///*Sleep(3000);*/
+		//DelayTextWithSkip(20, "Your choices WILL determine your FATE.");
+		//
+		//cout << "" << endl;
+		///*Sleep(3000);*/
+		//DelayTextWithSkip(20, "Here is your first one");
+		//
+		//cout << "" << endl;
+		///*Sleep(3000);*/
 
-		cout << "You wake up in a house." << endl;
-		
-		Sleep(2000);
-		cout << "As your eyes open you start to scan the room." << endl;
-		
-		Sleep(2000);
-		cout << "You see an old man in the corner on a stool. " << endl;
-		Sleep(2000);
-		cout << "" << endl;
-		cout << "" << endl;
-		cout << "Watching." << endl;
-		Sleep(2000);
-		cout << "" << endl;
-		cout << "" << endl;
-		cout << "Waiting." << endl;
-		Sleep(2000);
-		cout << "" << endl;
-		cout << "" << endl;
-		ColorPicker(5);
-		
+		//cout << "You wake up in a house." << endl;
+		//
+		///*Sleep(2000);*/
+		//cout << "As your eyes open you start to scan the room." << endl;
+		//
+		///*Sleep(2000);*/
+		//cout << "You see an old man in the corner on a stool. " << endl;
+		///*Sleep(2000);*/
+		//cout << "" << endl;
+		//cout << "" << endl;
+		//cout << "Watching." << endl;
+		///*Sleep(2000);*/
+		//cout << "" << endl;
+		//cout << "" << endl;
+		//cout << "Waiting." << endl;
+		///*Sleep(2000);*/
+		//cout << "" << endl;
+		//cout << "" << endl;
+		//ColorPicker(5);
+		//
 
 
 		//good track events
@@ -172,15 +98,23 @@ void main()
 	//  | | | || | | ||// __|
 	//  | |_| || |_| |  \__ \
 	//   \___/  \___/   |___/
-
+//			0-99          Questions
 
 
 	events[0] = { "Would you like coffee or tea?", "Coffee", "Tea", 1 , 1 };
 	
-	events[1] = { "Does this hat make me look fat?", "I actually think it's a rather dashing hat!", "Yeah old man. You'd be fat wothout it.", 2 , 2 };
-	events[2] = { "The cat seems to want you to follow, will you?", "no", "yes", 100 , 3 };
-	events[3] = { "question3", "no", "yes", 0 , 4 };
+	events[1] = { "Does this hat make me look fat?", "I actually think it's a rather dashing hat!", "You're a fat old fuck anyway.", 101 , 200 };
+	events[2] = { "The cat seems to want you to follow him, will you?", "no", "yes", 201 , 108 };
+	events[3] = { "Hello! I'm so sorry to ask this... Can you help our village?", "no", "yes", 0 , 4 };
 	events[4] = { "question", "no", "yes", 0 , 1 };
+	events[5] = { "question", "no", "yes", 0 , 1 };
+	events[6] = { "question", "no", "yes", 0 , 1 };
+	events[7] = { "question", "no", "yes", 0 , 1 };
+	events[8] = { "question", "no", "yes", 0 , 1 };
+
+	events[9] = { "question", "no", "yes", 0 , 1 };
+	events[10] = { "question", "no", "yes", 0 , 1 };
+	events[11] = { "question", "no", "yes", 0 , 1 };
 
 
 	//    __   ___    ___   _     
@@ -189,20 +123,37 @@ void main()
 	//    | || | | || | | |  / __|
 	//    | || |_| || |_| |  \__ \
 	//    |_| \___/  \___/   |___/
-                          
+//          100-199       Good Track dialogue                      
 
 	
-	events[100] = { "question", "", "", 101 , 101 };
-
+	events[100] = { "question", "Continue", "", 101 , 101 };
+	events[101] = { "The old man nods as you walk out the door.", "Okay!", "Alright!", 102 , 102 };
+	events[102] = { "You walk down a dusty path. It is warm. Summer is coming.", "Neat.", "Hot.", 103 , 103 };
+	events[103] = { "You come across a cat in the road.", "Aww!", "Eww.", 104 , 104 };
+	events[104] = { "The cat looks at you square in the eyes.", "AWWWWH KITTY CATTTTTTT!!!", "Disgusting creature.", 105 , 105 };
+	events[105] = { "Meow.", "Go away cat.", "You wanna come with me bud?", 106 , 2 };
+	events[106] = { "Meooow.", "Fuck off cat.", "Fine! I'll find you an owner.", 107 , 2 };
+	events[107] = { "MEOOOWWW.", "AHHHHH! Do you like it when I scream at you? No? Get the fuck away.", "Awww I really can't resist any more!", 201 , 108 };
+	events[108] = { "You and your cat continue down the road. He hops up on to your shoulder.", "aww", "awww", 109 , 109 };
+	events[109] = { "You walk. For hours. Come upon a village. ", "...", "...", 110 , 110 };
+	events[110] = { "A viillager comes running out of the village towards you.", "...", "...", 3 , 3 };
+	events[111] = { "You will?! Thank god. You're saving everyone!", "...", "...", 112 , 112 };
+	events[112] = { "We need some help with our water collection system.", "...", "...", 101 , 101 };
+	events[113] = { "You assist the villagers in setting up a tarp between a couple of buildings.", "", "", 101 , 101 };
+	events[114] = { "question", "", "", 101 , 101 };
 
 	//    ___    ___    ___   _     
 	//   |__ \  / _ \  / _ \ ( )    
 	//      ) || | | || | | ||/ ___ 
 	//     / / | | | || | | |  / __|
-	//    / /_ | |_| || |_| |  \__ \
+	//    / /_ | |_| || |_| |  \__ \0
 	//   |____| \___/  \___/   |___/
+//          200-299       Evil Track dialogue
+	events[200] = { "Fuck you too!", "...", "...", 101 , 101 };
+	events[201] = { "You move on. No burdens in your wake. time to head to town.", "...", "...", 101 , 101 };
 
-	events[200] = { "question", "no", "yes", 0 , 1 };
+
+
 	//    ____    ___    ___   _     
 	//   |___ \  / _ \  / _ \ ( )    
 	//     __) || | | || | | ||/ ___ 

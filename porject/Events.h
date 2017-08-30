@@ -1,4 +1,5 @@
 #pragma once
+#include <windows.h>
 struct Event
 {
 	char quest[80];
@@ -11,3 +12,16 @@ struct Event
 };
 
 int doEvent(Event event);
+void blink();
+
+void ColorPicker(int color);
+
+void TimedPause(int millisec);
+
+void DelayText(int millisec, char word[]);
+
+void DelayTextWithSkip(int millisec, char word[]);
+
+
+void test(int x, int y);
+

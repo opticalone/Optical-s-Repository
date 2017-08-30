@@ -4,8 +4,7 @@ struct Player {
 
 
 	int pHealth = 200;
-	int pGoodness = 100;
-	
+	int pKarma = 100;
 	int PCoin = 0;
 	int pStr = 0;
 	int pDef = 0;
