@@ -65,7 +65,7 @@ void DelayText(int millisec, char word[])
 	for (int i = 0; i < strlen(word); i++)
 	{
 		cout << word[i];
-		this_thread::sleep_for(chrono::milliseconds(millisec));
+		//this_thread::sleep_for(chrono::milliseconds(millisec));
 		Sleep(millisec);
 	}
 
@@ -98,7 +98,7 @@ void main()
 		Player stats;
 		test(1, 15);
 
-	/*	ColorPicker(10);
+		ColorPicker(10);
 		DelayTextWithSkip(20, "     ,d8888b        d8b       d8b       d8b                     ");                                   
 		DelayTextWithSkip(20, "     88P'           ?88       ?88       88P                     ");
 		DelayTextWithSkip(20, "  d888888P           88b       88b     d88                      ");
@@ -109,7 +109,7 @@ void main()
 		DelayTextWithSkip(1, "                                                            )88");
 		DelayTextWithSkip(1, "                                                          ,d8P");
 		DelayTextWithSkip(1, "                                                       `?888P'");
-    */
+    
 		ColorPicker(8);
 		DelayTextWithSkip(20, "Welcome to Fahblay");
 		cout << " " << endl;
@@ -159,25 +159,67 @@ void main()
 
 
 		//good track events
-	Event events[100];
+		// EVENT [number] GUIDE
+		//			0-99          Questions
+		//          100-199       Good Track dialogue
+		//          200-299       Evil Track dialogue
+
+
+	Event events[500];
+
+	//    ___    ___   _     
+	//   / _ \  / _ \ ( )___ 
+	//  | | | || | | ||// __|
+	//  | |_| || |_| |  \__ \
+	//   \___/  \___/   |___/
+
+
+
 	events[0] = { "Would you like coffee or tea?", "Coffee", "Tea", 1 , 1 };
 	
 	events[1] = { "Does this hat make me look fat?", "I actually think it's a rather dashing hat!", "Yeah old man. You'd be fat wothout it.", 2 , 2 };
-	events[2] = { "The cat seems to want you to follow, will you?", "no", "yes", 50 , 3 };
+	events[2] = { "The cat seems to want you to follow, will you?", "no", "yes", 100 , 3 };
 	events[3] = { "question3", "no", "yes", 0 , 4 };
 	events[4] = { "question", "no", "yes", 0 , 1 };
 
 
+	//    __   ___    ___   _     
+	//   /_ | / _ \  / _ \ ( )    
+	//    | || | | || | | ||/ ___ 
+	//    | || | | || | | |  / __|
+	//    | || |_| || |_| |  \__ \
+	//    |_| \___/  \___/   |___/
+                          
+
+	
+	events[100] = { "question", "", "", 101 , 101 };
 
 
+	//    ___    ___    ___   _     
+	//   |__ \  / _ \  / _ \ ( )    
+	//      ) || | | || | | ||/ ___ 
+	//     / / | | | || | | |  / __|
+	//    / /_ | |_| || |_| |  \__ \
+	//   |____| \___/  \___/   |___/
 
+	events[200] = { "question", "no", "yes", 0 , 1 };
+	//    ____    ___    ___   _     
+	//   |___ \  / _ \  / _ \ ( )    
+	//     __) || | | || | | ||/ ___ 
+	//    |__ < | | | || | | |  / __|
+	//    ___) || |_| || |_| |  \__ \
+	//   |____/  \___/  \___/   |___/
 
+	events[300] = { "question", "no", "yes", 0 , 1 };
+                            
+	//    _  _     ___    ___   _     
+	//   | || |   / _ \  / _ \ ( )    
+	//   | || |_ | | | || | | ||/ ___ 
+	//   |__   _|| | | || | | |  / __|
+	//      | |  | |_| || |_| |  \__ \
+	//      |_|   \___/  \___/   |___/
+	          
 
-
-
-
-	//evil track events
-	events[50] = { "question", "no", "yes", 0 , 1 };
 
 	int idx = 0;
 	while (idx >= 0)
