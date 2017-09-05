@@ -6,7 +6,7 @@ struct Event
 	char opti1[80];
 	char opti2[80];
 	int left,right;
-
+	int JustText;
 
 
 };

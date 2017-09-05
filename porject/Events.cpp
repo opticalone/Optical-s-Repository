@@ -22,46 +22,69 @@ bool check(int c)
 
 int doEvent(Event event) 
 {
-	
-	
-	cout << endl;
-	cout << event.quest << endl;
-
-	if (strcmp(event.opti1, "") != 0)
-		cout << "1)" << event.opti1 << endl;
-	if (strcmp(event.opti2, "") != 0)
-		cout << "2)" << event.opti2 << endl;
-	bool Check = true;
-	
-	int input = 0;
-	while (true)
+	if (event.JustText == 1)
 	{
-		DelayTextWithSkip(1, "Make your choice: ");
-		
-		cin >> input;
+		DelayTextWithSkip(40, event.quest);
+		return event.left;
+	}
+	else
+	{
+		cout << endl;
+		//cout << event.quest << endl;
+		DelayTextWithSkip(20, event.quest);
 
-		Check = check(input);
-
-		//if (cin.fail())
-		//{
-		//	cin.clear();
-		//	cin.ignore(80, '\n');
-		//}
-		//else break;
-		/*system("cls");*/
-
-
-		if (input == 1 && Check == true)
+		if (strcmp(event.opti1, "") != 0)
 		{
-			stats.pKarma += 50;
-			return event.left;
+			
+			//cout << "1)" << event.opti1 << endl;
+			cout << "1) ";
+			DelayTextWithSkip(20, event.opti1);
 		}
-		if (input == 2 && Check == true)
+
+		if (strcmp(event.opti2, "") != 0)
 		{
-			stats.pKarma -= 50;
-			return event.right;
+			//cout << "1)" << event.opti1 << endl;
+			
+			cout << "2) ";
+			DelayTextWithSkip(20, event.opti2);
 		}
-	}		
+		bool Check = true;
+
+		int input = 0;
+		while (true)
+		{
+			DelayTextWithSkip(5, "Make your choice: ");
+
+			cin >> input;
+
+			Check = check(input);
+
+			//if (cin.fail())
+			//{
+			//	cin.clear();
+			//	cin.ignore(80, '\n');
+			//}
+			//else break;
+			/*system("cls");*/
+
+
+			if (input == 1 && Check == true)
+			{
+				ColorPicker(3);
+				stats.pKarma += 50;
+				return event.left;
+			}
+			if (input == 2 && Check == true)
+			{
+				ColorPicker(11);
+				stats.pKarma -= 50;
+				return event.right;
+				
+			}
+		}
+	}
+	
+	
 }
 
 void blink()
