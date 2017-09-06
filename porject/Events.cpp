@@ -61,8 +61,8 @@ int doEvent(Event event)
 
 			//if (cin.fail())
 			//{
-			//	cin.clear();
-			//	cin.ignore(80, '\n');
+				//cin.clear();
+				//cin.ignore(80, '\n');
 			//}
 			//else break;
 			/*system("cls");*/
