@@ -158,7 +158,7 @@ void test(int x, int y)
 	for (int i = x; i <= y; i++)
 	{
 		ColorPicker(i);
-		DelayText(1, "test");
+		DelayText(1, "Color number: ");
 		std::cout << i << endl;
 	}
 }
