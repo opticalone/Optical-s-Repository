@@ -1,27 +1,178 @@
-﻿//  ______    _     _     _             
-//  |  ___|  | |   | |   | |            
-//  | |_ __ _| |__ | |__ | | __ _ _   _ 
-//  |  _/ _` | '_ \| '_ \| |/ _` | | | |
-//  | || (_| | | | | |_) | | (_| | |_| |
-//  \_| \__,_|_| |_|_.__/|_|\__,_|\__, |
-//                                 __/ |
-//                                |___/
+﻿//  ______    _     _     _                A text adventure of chooses.
+//  |  ___|  | |   | |   | |               Will you be good?
+//  | |_ __ _| |__ | |__ | | __ _ _   _    Will you be evil?
+//  |  _/ _` | '_ \| '_ \| |/ _` | | | |   It's up to you.
+//  | || (_| | | | | |_) | | (_| | |_| |   Play as you like.
+//  \_| \__,_|_| |_|_.__/|_|\__,_|\__, |   There are several endings.
+//                                 __/ |   Several paths. 
+//                                |___/    Several ways to die .
 #include <iostream>
 #include <string>
 #include <time.h>
+#include <fstream>
 #include "player.h"
 #include "Events.h"
 #include <windows.h>
 #include <thread>
 #include <chrono>
 
-
 using namespace std;
 
+void kindaGood(Player doofus)
+{
+
+
+	//create stream
+	std::fstream kGood;
+
+	//open file
+	kGood.open("kindaGood.txt", std::ios_base::out);
+
+	//open check
+	if(kGood.fail())
+	{
+		cout << "sad day";
+
+	}
+	else if(kGood.is_open())
+	{
+		kGood << "You've earned: " << doofus.pCoin << " gold!" << endl;
+		kGood << "You karma is: " << doofus.pKarma << endl;
+		kGood <<  "You are a pretty nice person! People smile when they see you!" << endl;
+		kGood << "You deserve a pizza cake!";
+
+	}
+	kGood.close();
+	
+
+}
+void kindaEvil(Player doofus)
+{
+
+
+	//create stream
+	std::fstream kGood;
+
+	//open file
+	kGood.open("kindaEvil.txt", std::ios_base::out);
+
+	//open check
+	if (kGood.fail())
+	{
+		cout << "sad day";
+
+	}
+	else if (kGood.is_open())
+	{
+		kGood << "You've earned: " << doofus.pCoin << " gold!" << endl;
+		kGood << "You karma is: " << doofus.pKarma << endl;
+		kGood << "You are a pretty bad person! People frown when they see you!" << endl;
+		kGood << "You deserve a stern glare!";
+
+	}
+	kGood.close();
+
+
+}
+void superEvil(Player doofus)
+{
+
+
+	//create stream
+	std::fstream kGood;
+
+	//open file
+	kGood.open("superEvil.txt", std::ios_base::out);
+
+	//open check
+	if (kGood.fail())
+	{
+		cout << "sad day";
+
+	}
+	else if (kGood.is_open())
+	{
+		kGood << "You've earned: " << doofus.pCoin << " gold!" << endl;
+		kGood << "You karma is: " << doofus.pKarma << endl;
+		kGood << "Wow. Just wow. I didn't think it was possible." << endl;
+		kGood << "Your tale may end here but your infamy will live on for generations." << endl;
+		kGood << "You deserve maybe death?";
+
+	}
+	kGood.close();
+
+
+}
+void superGood(Player doofus)
+{
+
+
+	//create stream
+	std::fstream kGood;
+
+	//open file
+	kGood.open("superGood.txt", std::ios_base::out);
+
+	//open check
+	if (kGood.fail())
+	{
+		cout << "sad day";
+
+	}
+	else if (kGood.is_open())
+	{
+		kGood << "You've earned: " << doofus.pCoin << " gold!" << endl;
+		kGood << "You karma is: " << doofus.pKarma << endl;
+		kGood << "You are a paragon of integrity! People chher in the streets and rally towardsa whatever your agenda is." << endl;
+		kGood << "You're going to use that power for good, right?" << endl;
+		kGood << "You deserve happiness.";
+
+	}
+	kGood.close();
+
+
+}
+void superNeutral(Player doofus)
+{
+
+
+	//create stream
+	std::fstream kGood;
+
+	//open file
+	kGood.open("superNeutral.txt", std::ios_base::out);
+
+	//open check
+	if (kGood.fail())
+	{
+		cout << "sad day";
+
+	}
+	else if (kGood.is_open())
+	{
+		kGood << "You've earned: " << doofus.pCoin << " gold!" << endl;
+		kGood << "You karma is: " << doofus.pKarma << endl;
+		kGood << "Oh." << endl;
+		kGood << "I guess neutality is fine." << endl;
+		kGood << "t h a n k";
+
+	}
+	kGood.close();
+
+
+}
 void main()
 {
+
+	   
+		
 		string playerName;
 		Player stats;
+		kindaGood(stats);
+		kindaEvil(stats);
+		superEvil(stats);
+		superGood(stats);
+		superNeutral(stats);
 		//test(1, 150);
 
 		//ColorPicker(42);

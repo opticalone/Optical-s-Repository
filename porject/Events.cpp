@@ -71,13 +71,15 @@ int doEvent(Event event)
 			if (input == 1 && Check == true)
 			{
 				ColorPicker(11);
-				stats.pKarma += 50;
+				stats.pKarma += 55;
+				stats.pCoin +=2;
 				return event.left;
 			}
 			if (input == 2 && Check == true)
 			{
 				ColorPicker(3);
 				stats.pKarma -= 50;
+				stats.pCoin += 3;
 				return event.right;
 				
 			}

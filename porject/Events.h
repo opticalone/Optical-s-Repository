@@ -12,7 +12,7 @@ struct Event
 
 };
 
-int doEvent(Event ev+ent);
+int doEvent(Event event);
 void blink();
 
 void ColorPicker(int color);
