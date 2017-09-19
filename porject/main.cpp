@@ -25,64 +25,65 @@ void main()
 		//test(1, 150);
 
 		//ColorPicker(42);
-		//DelayTextWithSkip(70, "     ,d8888b        d8b       d8b       d8b                     ");
-		//DelayTextWithSkip(60, "     88P'           ?88       ?88       88P                     ");
-		//DelayTextWithSkip(50, "  d888888P           88b       88b     d88                      ");
-		//DelayTextWithSkip(40, "    ?88'  d888b8b    888888b   888888b 888   d888b8b  ?88   d8P ");
-		//DelayTextWithSkip(30, "    88P  d8P' ?88    88P `?8b  88P `?8b 88  d8P' ?88  d88   88  ");
-		//DelayTextWithSkip(20, "   d88   88b  ,88b  d88   88P d88,  d88 88b 88b  ,88b ?8(  d88  ");
-		//DelayTextWithSkip(10, "  d88'   `?88P'`88bd88'   88bd88'`?88P'  88b`?88P'`88b`?88P'?8b ");
-		//DelayTextWithSkip(10, "                                                            )88 ");
-		//DelayTextWithSkip(10, "                                                          ,d8P  ");
-		//DelayTextWithSkip(10, "                                                       `?888P'  "); 
-  //  
-		//ColorPicker(8);
-		//DelayTextWithSkip(20, "Welcome to Fahblay");
-		//cout << " " << endl;
-		//DelayTextWithSkip(50, "This is a text based adventure of good and...");
-		//ColorPicker(4);
-		//DelayTextWithSkip(300, "...EVIL");
-		//ColorPicker(8);
-		//cout << " " << endl;
-		//DelayTextWithSkip(20, "What is your name?");
-		//cin >> playerName;
-		//cout << "" << endl;
-		//DelayTextWithSkip(20, "We can't all have ringers I suppose.");
-		//cout << playerName;
+		DelayTextWithSkip(20, "     ,d8888b        d8b       d8b       d8b                     ");
+		DelayTextWithSkip(20, "     88P'           ?88       ?88       88P                     ");
+		DelayTextWithSkip(20, "  d888888P           88b       88b     d88                      ");
+		DelayTextWithSkip(20, "    ?88'  d888b8b    888888b   888888b 888   d888b8b  ?88   d8P ");
+		DelayTextWithSkip(20, "    88P  d8P' ?88    88P `?8b  88P `?8b 88  d8P' ?88  d88   88  ");
+		DelayTextWithSkip(20, "   d88   88b  ,88b  d88   88P d88,  d88 88b 88b  ,88b ?8(  d88  ");
+		DelayTextWithSkip(10, "  d88'   `?88P'`88bd88'   88bd88'`?88P'  88b`?88P'`88b`?88P'?8b ");
+		DelayTextWithSkip(10, "                                                            )88 ");
+		DelayTextWithSkip(10, "                                                          ,d8P  ");
+		DelayTextWithSkip(10, "                                                       `?888P'  "); 
+    
+		ColorPicker(8);
+		DelayTextWithSkip(20, "Welcome to Fahblay");
+		cout << " " << endl;
+		DelayTextWithSkip(50, "This is a text based adventure of good and...");
+		ColorPicker(4);
+		cout << " " << endl;
+		DelayTextWithSkip(400, "EVIL");
+		ColorPicker(8);
+		cout << " " << endl;
+		DelayTextWithSkip(20, "What is your name?");
+		cin >> playerName;
+		cout << "" << endl;
+		DelayTextWithSkip(20, "We can't all have ringers I suppose.");
+		cout << playerName;
 
-		//DelayTextWithSkip(20, ", you will have to make decisions.");
-		//cout << "" << endl;
-		//Sleep(3000);
-		//DelayTextWithSkip(20, "Your choices WILL determine your FATE.");
-		//
-		//cout << "" << endl;
-		//Sleep(3000);
-		//DelayTextWithSkip(20, "Here is your first one");
-		//
-		//cout << "" << endl;
-		//Sleep(3000);
-		//DelayTextWithSkip(20, "You wake up in a house.");
-		//
-		//
-		//Sleep(1000);
-		//
-		//DelayTextWithSkip(20, "As your eyes open you start to scan the room.");
-		//Sleep(1000);
-		//
-		//DelayTextWithSkip(20, "You see an old man in the corner on a stool. ");
-		//Sleep(1000);
-		//cout << "" << endl;
-		//cout << "" << endl;
-		//DelayTextWithSkip(100, "Watching...");
-		//
-		//Sleep(2000);
-		//cout << "" << endl;
-		//cout << "" << endl;
-		//DelayTextWithSkip(100, "Waiting...");
+		DelayTextWithSkip(20, ", you will have to make decisions.");
+		cout << "" << endl;
+		Sleep(3000);
+		DelayTextWithSkip(20, "Your choices WILL determine your FATE.");
+		
+		cout << "" << endl;
+		Sleep(3000);
+		DelayTextWithSkip(20, "Here is your first one");
+		
+		cout << "" << endl;
+		Sleep(3000);
+		DelayTextWithSkip(20, "You wake up in a house.");
+		
+		
+		Sleep(1000);
+		
+		DelayTextWithSkip(20, "As your eyes open you start to scan the room.");
+		Sleep(1000);
+		
+		DelayTextWithSkip(20, "You see an old man in the corner on a stool. ");
+		Sleep(1000);
+		cout << "" << endl;
+		cout << "" << endl;
+		DelayTextWithSkip(200, "Watching...");
+		
+		Sleep(2000);
+		cout << "" << endl;
+		cout << "" << endl;
+		DelayTextWithSkip(800, "Waiting...");
 	
-		//Sleep(2000);
-		//cout << "" << endl;
-		//cout << "" << endl;
+		Sleep(2000);
+		cout << "" << endl;
+		cout << "" << endl;
 		ColorPicker(8);
 		
 
@@ -177,8 +178,10 @@ void main()
 	events[119] = { "I'm the aide to the mayor.", "", "", 120 , 120, 1 };
 	events[120] = { "I think the mayor would love to meet someone like you.", "", "", 121 , 121 , 1 };
 	events[121] = { "She leads you to the Mayor's Office.", "", "", 122 , 122 , 1 };
+
 	// === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office 
-	// === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office 
+	// Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office ===
+
 	events[122] = { "You enter a dimly lit room.", "", "", 123 , 123 , 1 };
 	events[123] = { "Haze creates shafts of light through the blinds.", "", "", 124 , 124 , 1 };
 	events[124] = { "A man stands at the window. A glass of scotch in one hand.", "", "", 9 , 9 , 1 };
