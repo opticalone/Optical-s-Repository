@@ -118,7 +118,7 @@ void main()
 	// === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office === Mayor's Office 
 	events[9] = { "Would you like a drink?", "What do you have?", "None for me, thanks!", 10 , 125 ,0};
 	events[10] = { "15 year or 18 year?", "Well the 18 sounds great!", "I'd rather have the 15.", 126 , 127 ,0};
-	events[11] = { "Do you think you could help us out?", "Do you mean the village a 7ish hours norht of here?", "I really can't.", 133 , 134 ,0};
+	events[11] = { "Do you think you could help us out?", "Do you mean the village a 7ish hours norht of here?", "I really can't.", 133 , 12 ,0};
 	events[12] = { "Do you think you could go help?", "", "", 0 , 1 ,0 };
 	// === Mob Bosses Office === Mob Bosses Office === Mob Bosses Office === Mob Bosses Office === Mob Bosses Office === Mob Bosses Office === Mob Bosses Office === Mob Bosses Office === Mob Bosses Office 
 	events[13] = { "Hows'about joining up? We always need fresh meat.", "", "", 0 , 1 ,0 };
@@ -196,10 +196,10 @@ void main()
 	events[133] = { "Yes in fact!", "I already stopped by!", "I passed by! I should have helped!", 134 , 12 , 1 };
 	events[134] = { "You are amazing! Here's a bit of gold for your trouble!", "", "", 135 , 135 , 1 };
 	events[135] = { "More gold! They offer a place for the night. You rest.", "", "", 136 , 136 , 1 };
-	events[136] = { "End. For now.", "", "", 999 ,999  ,  };
-	events[137] = { "", "", "", 101 , 101 , 1 };
-	events[138] = { "", "", "", 101 , 101 , 1 };
-	events[139] = { "", "", "", 101 , 101 , 1 };
+	events[136] = { "You decide to stay in town... For now.", "", "", 137 , 137  ,  };
+	events[137] = { "You have a room ath the inn closest to the mayors office!", "", "", 138 , 138 , 1 };
+	events[138] = { "A note on the bed reads:", "", "", 139 , 139 , 1 };
+	events[139] = { "Courtesy of the mayor! <3 Ti", "", "", 140 , 140 , 1 };
 	events[140] = { "", "", "", 101 , 101 , 1 };
 	events[141] = { "", "", "", 101 , 101 , 1 };
 	events[142] = { "", "", "", 101 , 101 , 1 };
